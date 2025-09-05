@@ -9,6 +9,11 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function NewsPage({ params }: { params: { id: string } }) {
-  return <NewsDetail newsId={params.id} />;
+export default async function NewsPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  return <NewsDetail newsId={id} />;
 }

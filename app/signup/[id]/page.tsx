@@ -10,6 +10,11 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function SignupPage({ params }: { params: { id: string } }) {
-  return <SignupForm activityId={params.id} />;
+export default async function SignupPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  return <SignupForm activityId={id} />;
 }

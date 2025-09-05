@@ -10,6 +10,11 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function VirtualRoutePage({ params }: { params: { id: string } }) {
-  return <VirtualRouteDetail routeId={params.id} />;
+export default async function VirtualRoutePage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  return <VirtualRouteDetail routeId={id} />;
 }

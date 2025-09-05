@@ -151,7 +151,7 @@ export default function Home() {
           </div>
 
           {/* News List */}
-          <div className="space-y-4">
+          <div className="flex flex-col space-y-4">
             {filteredNews.map((news) => (
               <Link key={news.id} href={`/news/${news.id}`}>
                 <Card className="overflow-hidden hover:shadow-md transition-shadow">

@@ -137,9 +137,9 @@ export default function MyActivities() {
                       <div className="flex items-center text-xs text-blue-600">
                         <i className="mr-1 ri-coin-line" />
                         <span>
-                          {activeTab === '参与中' ? `${activity.points}积分` :
-                           activeTab === '已完成' ? `获得${activity.points}积分` :
-                           `预计${activity.estimatedPoints}积分`}
+                          {activeTab === '参与中' ? `${'points' in activity ? activity.points : 0}积分` :
+                           activeTab === '已完成' ? `获得${'points' in activity ? activity.points : 0}积分` :
+                           `预计${'estimatedPoints' in activity ? activity.estimatedPoints : 0}积分`}
                         </span>
                       </div>
                     </div>
