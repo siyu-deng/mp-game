@@ -1,30 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MP Game - 河南省全民健身运动大会
 
-## Getting Started
+全民健身走活动平台，支持线上运动会、虚拟路线等功能。
 
-First, run the development server:
+## 技术栈
+
+- **框架**: Next.js 15.3.2
+- **样式**: Tailwind CSS 3.4.17
+- **语言**: TypeScript
+- **部署**: Vercel
+
+## 功能特性
+
+- 🏃‍♂️ 线上运动会
+- 🗺️ 虚拟路线挑战
+- 📊 运动数据统计
+- 🏆 积分商城
+- 📰 体育资讯
+
+## 本地开发
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# 安装依赖
+pnpm install
+
+# 启动开发服务器
 pnpm dev
-# or
-bun dev
+
+# 构建生产版本
+pnpm build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 部署
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+项目已配置自动部署到 Vercel。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
